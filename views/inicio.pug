@@ -1,0 +1,30 @@
+extends ./layout/index
+
+block slider    
+    .slider     
+        h1 Rio de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique excepturi consequatur facere et quo recusandae veritatis. Quas, deserunt. Temporibus inventore laudantium iusto consequatur laborum alias numquam laboriosam delectus? Suscipit.
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tenetur aperiam in mollitia veniam ab vitae, ipsum harum inventore ea quam voluptatibus tempora corrupti delectus! Vero architecto eos dolor nobis!
+            .col-md-6   
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")        
+
+        include ./layout/bloque-viajes 
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo viaje a Canada 
+                        p.fecha #{diaActual} de #{mesActual} de #{actualyear}
+    .container 
+        h2.mt-5.text-center Testimoniales    
+        include ./layout/bloque-testimoniales
